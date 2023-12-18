@@ -17,11 +17,16 @@ googleAnalytics: UA-123-45
 minify:
   disableXML: true
   minifyOutput: true
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
-  description: "ExampleSite description"
+  description: "IT技术分享"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
