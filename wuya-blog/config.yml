@@ -25,7 +25,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: 无涯学者的Blog
   description: "IT技术分享"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
