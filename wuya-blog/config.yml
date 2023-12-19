@@ -1,6 +1,6 @@
 baseURL: "https://developerTxy.github.io"
 title: 无涯·学者 的Blog
-paginate: 15
+paginate: 5 #页面显示的文章数
 theme: PaperMod
 
 enableInlineShortcodes: true #允许内联短码
@@ -27,8 +27,8 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 无涯学者的Blog
   description: "IT技术分享"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  keywords: [Blog, Java, GO,SQL]
+  author: 田雪阳
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "2006-01-02" #日期格式化
@@ -46,11 +46,11 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true #开启评论
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true #展示文章目录
+  tocopen: true  #自动展开目录
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -67,12 +67,12 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
+  # profile-mode        
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: true # needs to be explicitly set
     title:  无涯·学者 的Blog
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: "images/QQhead.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -85,7 +85,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: Welcome to 无涯学者 Blog
 
   socialIcons:
     - name: twitter
@@ -95,23 +95,23 @@ params:
     - name: github
       url: "https://github.com/developerTxy"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  analytics: #谷歌分析
+    #google:
+     # SiteVerificationTag: "XYZabc"
+    #bing:
+      #SiteVerificationTag: "XYZabc"
+    #yandex:
+      #SiteVerificationTag: "XYZabc"
 
-  cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+  #cover:
+    #hidden: true # hide everywhere but not in structured data
+    #hiddenInList: true # hide on list pages and home
+    #hiddenInSingle: true  # hide on single page
 
-  editPost:
-    URL: "https://github.com/developerTxy/hugo-blog-source/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  #editPost:
+    #URL: "https://github.com/developerTxy/hugo-blog-source/content"
+    #Text: "Suggest Changes" # edit text
+    #appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -137,6 +137,14 @@ menu:
       name: developerTxy
       url: https://developertxy.github.io/
       weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weigth: 10
+    - identifier: about
+      name: 关于我的信息
+      url: /about/
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
