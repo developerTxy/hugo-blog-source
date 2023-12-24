@@ -58,7 +58,7 @@ params:
     
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
+    favicon32x32: images/QQhead32.jpg #网站favicon 图标修改
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
@@ -149,9 +149,9 @@ menu:
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
+    #noClasses: false
     # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    codeFences: true #代码围栏功能
+    guessSyntax: true #代码猜测功能
+    lineNos: true #代码高亮的行号
+    style: darcula
