@@ -1,17 +1,23 @@
 ---
-title: "About"
-date: 2023-12-18T22:12:11+08:00
-lastmod: 2023-12-18T22:12:11+08:00
+title: "Hugo问题记录"
+date: 2023-12-24T15:32:46+08:00
+lastmod: 2023-12-24T15:32:46+08:00
 author: ["无涯·学者"]
 
+categories:
+- tech
+
 tags:
+- hugo
+- 目录
 
 keywords:
-#- word 1
-#- word 2
+- hugo
+- menu 
+- 主页跳转
 
-description: "" # 文章描述，与搜索优化相关
-summary: "" # 文章简单描述，会展示在主页
+description: "hugo 建站问题记录" # 文章描述，与搜索优化相关
+summary: "hugo 建站记录" # 文章简单描述，会展示在主页
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: ""
 draft: false # 是否为草稿
@@ -33,4 +39,5 @@ cover:
 
 <!-- more --> 
 
-
+###
+ hugo content 的目录 在config配置文件中 路径全部用（英文）小写，包含大写字母路径找不到

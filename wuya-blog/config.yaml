@@ -28,7 +28,7 @@ params:
   title: 无涯学者的Blog
   description: "IT技术分享"
   keywords: [Blog, Java, GO,SQL]
-  author: 田雪阳
+  author: 无涯学者
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "2006-01-02" #日期格式化
@@ -63,35 +63,38 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
-    icon: /apple-touch-icon.png
+    text: "首页"
+    icon: images/QQhead.jpg
     iconHeight: 35
 
   # profile-mode        
   profileMode:
     enabled: true # needs to be explicitly set
     title:  无涯·学者 的Blog
-    subtitle: "This is subtitle"
+    subtitle: "欢迎思维碰撞"
     imageUrl: "images/QQhead.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
-
+      - name: 总目录
+        url: post
+      - name: 技术
+        url: post/tech
+      - name: 读书笔记
+        url: post/booksnotes/
+      - name: 中医养生
+        url: post/keepingfit/
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: Welcome to 无涯学者 Blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    #- name: twitter
+      #url: "https://twitter.com/"
+    - name: email
+      url: "mailto:t317004352@qq.com"
     - name: github
       url: "https://github.com/developerTxy"
 
@@ -125,25 +128,22 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: Txy
-      name: developerTxy
-      url: https://developertxy.github.io/
-      weight: 30
     - identifier: search
       name: 搜索
       url: /search/
-      weigth: 10
+      weigth: 1
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 2
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 3
     - identifier: about
       name: 关于我的信息
       url: /about/
+      weight: 60
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
