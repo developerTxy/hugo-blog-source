@@ -51,7 +51,7 @@ params:
   hideSummary: false
   showtoc: true #展示文章目录
   tocopen: true  #自动展开目录
-
+  toc: "目录"
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
@@ -126,6 +126,8 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+  busuanzi:
+      enable: true
 menu:
   main:
     - identifier: search
