@@ -157,3 +157,8 @@ markup:
     guessSyntax: true #代码猜测功能
     lineNos: true #代码高亮的行号
     style: darcula
+utteranc:
+    enable: true
+    repo: "developerTxy/hugo-blog-source" 
+    issueTerm: "title"
+    theme: "github-light"  
